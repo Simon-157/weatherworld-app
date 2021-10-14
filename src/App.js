@@ -66,8 +66,9 @@ function App() {
           </div>
           <div className="weather-show">
             <div className="temperature"> {(weather.main.temp)}°c</div>
-            <div className="weather-state">cloudy</div>
-            <div className="weather-state">{(weather.icon)}</div>
+            <div className="weather-state">{weather.weather[0].main}</div>
+            
+            {/* <div className="weather-state">{(weather.weather[1].main)}</div> */}
           </div>
 
         </div>
